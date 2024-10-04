@@ -147,10 +147,14 @@ bool indicators_callback(void) {
     // Basic functioning: for each indicator, set_indicator is used to decide if the current indicator should be lit or off.
     indicator_config* current_indicator_p ;
     int index ;
+    RGB color;
     for (index = 0 ; index < INDICATOR_NUMBER ; index++) {
         current_indicator_p = get_indicator_p(index) ;
-        if (set_indicator( *(current_indicator_p)) ) sethsv( current_indicator_p -> h, current_indicator_p -> s, current_indicator_p -> v, (LED_TYPE *)&led[current_indicator_p -> index]);
-        else sethsv( 0,0,0, (LED_TYPE *)&led[current_indicator_p -> index]);
+        if (set_indicator( *(current_indicator_p)) ){
+	    color = hsv_to_rgb((HSV){ current_indicator_p -> h, current_indicator_p -> s, current_indicator_p -> v});
+            rgblight_setrgb_at(color.r, color.g, color.b, current_indicator_p -> index);
+        }
+        else rgblight_setrgb_at( RGB_OFF, current_indicator_p -> index);
     }
     return true;
 }
