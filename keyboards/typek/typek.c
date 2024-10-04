@@ -151,6 +151,12 @@ bool indicators_callback(void) {
     for (index = 0 ; index < INDICATOR_NUMBER ; index++) {
         current_indicator_p = get_indicator_p(index) ;
         if (set_indicator( *(current_indicator_p)) ){
+            /*
+               Issue: while the VIA custom GUI returns HSV values, the QMK direct operation funcs are RGB.
+               So this line converts the current indicator to RGB. This was not done at the indicator_config_set_value VIA callback function
+               because at the indicator_config_get_value the RGB to HSV would be required and this throttles the keyboard
+               when the user is adjusting the color on the GUI.
+            */
 	    color = hsv_to_rgb((HSV){ current_indicator_p -> h, current_indicator_p -> s, current_indicator_p -> v});
             rgblight_setrgb_at(color.r, color.g, color.b, current_indicator_p -> index);
         }
