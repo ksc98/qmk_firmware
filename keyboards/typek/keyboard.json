@@ -29,6 +29,7 @@
     },
     "rgblight": {
         "led_count": 69,
+        "driver": "ws2812",
         "animations": {
             "breathing": true,
             "rainbow_mood": true,
@@ -54,6 +55,9 @@
             "backing_size": 8192,
             "logical_size": 4096
         }
+    },
+    "dynamic_keymap": {
+        "layer_count": 8
     },
     "url": "https://www.gok.design/type-k",
     "maintainer": "Gondolindrim", 
