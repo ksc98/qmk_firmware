@@ -45,6 +45,10 @@ typedef struct _indicator_config_t {
     0x05 LAYER 1
     0x06 LAYER 2
     0x07 LAYER 3
+    0x08 LAYER 4
+    0x09 LAYER 5
+    0x0A LAYER 6
+    0x0B LAYER 7
 */
 
 bool func_switch(uint8_t func) {
@@ -74,6 +78,10 @@ bool func_switch(uint8_t func) {
         case 0x05:
         case 0x06:
         case 0x07:
+        case 0x08:
+        case 0x09:
+        case 0x0A:
+        case 0x0B:
         {
             if ( IS_LAYER_ON( (int)(func) - 4  ) ) return true;
             break;
