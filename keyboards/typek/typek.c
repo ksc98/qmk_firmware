@@ -125,7 +125,7 @@ void eeconfig_init_kb(void) {
     indicators.ind1.h = 0;
     indicators.ind1.s = 255;
     indicators.ind1.v = 150;
-    indicators.ind1.func = 0x76;
+    indicators.ind1.func = 0x04;
     indicators.ind1.index = 0;
     indicators.ind1.enabled = true;
 
@@ -133,7 +133,7 @@ void eeconfig_init_kb(void) {
     indicators.ind2.h = 86;
     indicators.ind2.s = 255;
     indicators.ind2.v = 150;
-    indicators.ind2.func = 0x75;
+    indicators.ind2.func = 0x04;
     indicators.ind2.index = 1;
     indicators.ind2.enabled = true;
 
@@ -141,7 +141,7 @@ void eeconfig_init_kb(void) {
     indicators.ind3.h = 166;
     indicators.ind3.s = 254;
     indicators.ind3.v = 150;
-    indicators.ind3.func = 0x01;
+    indicators.ind3.func = 0x04;
     indicators.ind3.index = 2;
     indicators.ind3.enabled = true;
 
