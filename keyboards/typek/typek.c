@@ -28,7 +28,7 @@ typedef struct _indicator_config_t {
         uint8_t v;
         uint8_t func ;
         uint8_t index ;
-        bool enabled;    
+        bool enabled;
 } indicator_config ;
 
 // Number of properties of the "indicator" struct
@@ -125,23 +125,23 @@ void eeconfig_init_kb(void) {
     indicators.ind1.h = 213;
     indicators.ind1.s = 255;
     indicators.ind1.v = 89;
-    indicators.ind1.func = 0x06;
+    indicators.ind1.func = 0x54;
     indicators.ind1.index = 0;
     indicators.ind1.enabled = true;
 
     // INDICATOR 1: MIDDLE INDICATOR
-    indicators.ind2.h = 170;
+    indicators.ind2.h = 0;
     indicators.ind2.s = 255;
     indicators.ind2.v = 255;
-    indicators.ind2.func = 0x05;
+    indicators.ind2.func = 0x54;
     indicators.ind2.index = 1;
     indicators.ind2.enabled = true;
 
     // INDICATOR 2: LEFT INDICATOR
     indicators.ind3.h = 0;
     indicators.ind3.s = 255;
-    indicators.ind3.v = 89;
-    indicators.ind3.func = 0x04;
+    indicators.ind3.v = 84;
+    indicators.ind3.func = 0x54;
     indicators.ind3.index = 2;
     indicators.ind3.enabled = true;
 
@@ -158,14 +158,32 @@ bool indicators_callback(void) {
     RGB color;
     for (index = 0 ; index < INDICATOR_NUMBER ; index++) {
         current_indicator_p = get_indicator_p(index) ;
-        if (set_indicator( *(current_indicator_p)) ){
+        // Special handling for indicators when layer 2 is active
+        bool should_light = set_indicator( *(current_indicator_p)) || 
+                           (current_indicator_p->index == 0 && IS_LAYER_ON(2)) ||
+                           // Keep left and middle indicators on when layer 2 is active
+                           ((current_indicator_p->index == 1 || current_indicator_p->index == 2) && 
+                            IS_LAYER_ON(2));
+        if (should_light){
             /*
                Issue: while the VIA custom GUI returns HSV values, the QMK direct operation funcs are RGB.
                So this line converts the current indicator to RGB. This was not done at the indicator_config_set_value VIA callback function
                because at the indicator_config_get_value the RGB to HSV would be required and this throttles the keyboard
                when the user is adjusting the color on the GUI.
             */
-	    color = hsv_to_rgb((HSV){ current_indicator_p -> h, current_indicator_p -> s, current_indicator_p -> v});
+            uint8_t h = current_indicator_p -> h;
+
+            // For all indicators, change color based on active layer
+            // Check layer 2 first for rightmost indicator (index 0) since it's momentary and takes priority
+            if (IS_LAYER_ON(2) && current_indicator_p -> index == 0) {
+                h = 213; // Magenta for layer 2 (rightmost indicator only)
+            } else if (IS_LAYER_ON(1)) {
+                h = 170; // Blue for layer 1 (all indicators)
+            } else {
+                h = 0; // Red for layer 0 (all indicators)
+            }
+
+	    color = hsv_to_rgb((HSV){ h, current_indicator_p -> s, current_indicator_p -> v});
             rgblight_setrgb_at(color.r, color.g, color.b, current_indicator_p -> index);
         }
         else rgblight_setrgb_at( RGB_OFF, current_indicator_p -> index);
