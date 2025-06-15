@@ -122,25 +122,25 @@ indicator_config* get_indicator_p (int index) {
 void eeconfig_init_kb(void) {
     // Default values: indicators start at white, 150 (roughly 60%) brightness value. Indicators 1 and 2 are active by default.
     // INDICATOR 0: RIGHT INDICATOR
-    indicators.ind1.h = 0;
+    indicators.ind1.h = 213;
     indicators.ind1.s = 255;
-    indicators.ind1.v = 150;
-    indicators.ind1.func = 0x04;
+    indicators.ind1.v = 89;
+    indicators.ind1.func = 0x06;
     indicators.ind1.index = 0;
     indicators.ind1.enabled = true;
 
     // INDICATOR 1: MIDDLE INDICATOR
-    indicators.ind2.h = 86;
+    indicators.ind2.h = 170;
     indicators.ind2.s = 255;
-    indicators.ind2.v = 150;
-    indicators.ind2.func = 0x04;
+    indicators.ind2.v = 255;
+    indicators.ind2.func = 0x05;
     indicators.ind2.index = 1;
     indicators.ind2.enabled = true;
 
     // INDICATOR 2: LEFT INDICATOR
-    indicators.ind3.h = 166;
-    indicators.ind3.s = 254;
-    indicators.ind3.v = 150;
+    indicators.ind3.h = 0;
+    indicators.ind3.s = 255;
+    indicators.ind3.v = 89;
     indicators.ind3.func = 0x04;
     indicators.ind3.index = 2;
     indicators.ind3.enabled = true;
