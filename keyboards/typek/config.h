@@ -25,6 +25,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #define EECONFIG_KB_DATA_SIZE (3*6)
 
+#define HOLD_ON_OTHER_KEY_PRESS
 
 /* LED MAP
 		0 , 1 , 2														Three indicators
