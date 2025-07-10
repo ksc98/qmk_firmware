@@ -27,6 +27,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #define HOLD_ON_OTHER_KEY_PRESS
 
+#define OS_DETECTION_KEYBOARD_RESET
+
 /* LED MAP
 		0 , 1 , 2														Three indicators
 		3 , 4 , 5														Three RGBs on left side

@@ -159,10 +159,10 @@ bool indicators_callback(void) {
     for (index = 0 ; index < INDICATOR_NUMBER ; index++) {
         current_indicator_p = get_indicator_p(index) ;
         // Special handling for indicators when layer 2 is active
-        bool should_light = set_indicator( *(current_indicator_p)) || 
+        bool should_light = set_indicator( *(current_indicator_p)) ||
                            (current_indicator_p->index == 0 && IS_LAYER_ON(2)) ||
                            // Keep left and middle indicators on when layer 2 is active
-                           ((current_indicator_p->index == 1 || current_indicator_p->index == 2) && 
+                           ((current_indicator_p->index == 1 || current_indicator_p->index == 2) &&
                             IS_LAYER_ON(2));
         if (should_light){
             /*
@@ -335,6 +335,28 @@ void indicator_config_get_value( uint8_t *data )
 void indicator_config_save(void)
 {
     eeconfig_update_kb_datablock(&indicators);
+}
+
+bool process_detected_host_os_kb(os_variant_t detected_os) {
+    if (!process_detected_host_os_user(detected_os)) {
+        return false;
+    }
+    switch (detected_os) {
+        case OS_MACOS:
+        case OS_IOS:
+            layer_on(0);
+            indicators_callback();
+            break;
+        case OS_WINDOWS:
+            layer_on(1);
+            indicators_callback();
+            break;
+        case OS_LINUX:
+        case OS_UNSURE:
+            break;
+    }
+
+    return true;
 }
 
 void via_custom_value_command_kb(uint8_t *data, uint8_t length) {
