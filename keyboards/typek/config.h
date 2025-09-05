@@ -29,6 +29,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #define OS_DETECTION_KEYBOARD_RESET
 
+#define TAPPING_TERM 80
+
 /* LED MAP
 		0 , 1 , 2														Three indicators
 		3 , 4 , 5														Three RGBs on left side
