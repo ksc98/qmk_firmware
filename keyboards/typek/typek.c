@@ -158,12 +158,14 @@ bool indicators_callback(void) {
     RGB color;
     for (index = 0 ; index < INDICATOR_NUMBER ; index++) {
         current_indicator_p = get_indicator_p(index) ;
-        // Special handling for indicators when layer 2 is active
+        // Special handling for indicators when layer 2 or 3 is active
         bool should_light = set_indicator( *(current_indicator_p)) ||
-                           (current_indicator_p->index == 0 && IS_LAYER_ON(2)) ||
-                           // Keep left and middle indicators on when layer 2 is active
+                           (current_indicator_p->index == 0 && IS_LAYER_ON(3)) ||
+                           // Keep left and middle indicators on when layer 3 is active
                            ((current_indicator_p->index == 1 || current_indicator_p->index == 2) &&
-                            IS_LAYER_ON(2));
+                            IS_LAYER_ON(3)) ||
+                           // Keep all indicators on when layer 2 is active
+                           IS_LAYER_ON(2);
         if (should_light){
             /*
                Issue: while the VIA custom GUI returns HSV values, the QMK direct operation funcs are RGB.
@@ -174,9 +176,11 @@ bool indicators_callback(void) {
             uint8_t h = current_indicator_p -> h;
 
             // For all indicators, change color based on active layer
-            // Check layer 2 first for rightmost indicator (index 0) since it's momentary and takes priority
-            if (IS_LAYER_ON(2) && current_indicator_p -> index == 0) {
-                h = 213; // Magenta for layer 2 (rightmost indicator only)
+            // Check layer 3 first for rightmost indicator (index 0) since it's momentary and takes priority
+            if (IS_LAYER_ON(3) && current_indicator_p -> index == 0) {
+                h = 213; // Magenta for layer 3 (rightmost indicator only)
+            } else if (IS_LAYER_ON(2)) {
+                h = 200; // Purple for layer 2 (all indicators)
             } else if (IS_LAYER_ON(1)) {
                 h = 170; // Blue for layer 1 (all indicators)
             } else {
@@ -352,6 +356,9 @@ bool process_detected_host_os_kb(os_variant_t detected_os) {
             indicators_callback();
             break;
         case OS_LINUX:
+            layer_on(2);
+            indicators_callback();
+            break;
         case OS_UNSURE:
             break;
     }
