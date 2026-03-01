@@ -28,6 +28,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #define EECONFIG_KB_DATA_SIZE (3*6)
 
+#define OS_DETECTION_KEYBOARD_RESET
+#define HOLD_ON_OTHER_KEY_PRESS
+#define TAPPING_TERM 200
+
 /* LED MAP
 		0 , 1 , 2														Three indicators
 		3 , 4 , 5														Three RGBs on left side

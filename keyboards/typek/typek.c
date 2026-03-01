@@ -161,9 +161,29 @@ bool indicators_callback_state(layer_state_t state) {
     RGB color;
     for (index = 0 ; index < INDICATOR_NUMBER ; index++) {
         current_indicator_p = get_indicator_p(index) ;
-        bool should_light = set_indicator(*(current_indicator_p), state);
+        // Special handling for indicators when layer 2 or 3 is active
+        bool should_light = set_indicator(*(current_indicator_p), state) ||
+                           (current_indicator_p->index == 0 && layer_state_cmp(state, 3)) ||
+                           // Keep left and middle indicators on when layer 3 is active
+                           ((current_indicator_p->index == 1 || current_indicator_p->index == 2) &&
+                            layer_state_cmp(state, 3)) ||
+                           // Keep all indicators on when layer 2 is active
+                           layer_state_cmp(state, 2);
         if (should_light){
-	    color = hsv_to_rgb((HSV){ current_indicator_p -> h, current_indicator_p -> s, current_indicator_p -> v});
+            uint8_t h = current_indicator_p -> h;
+
+            // For all indicators, change color based on active layer
+            if (layer_state_cmp(state, 3) && current_indicator_p -> index == 0) {
+                h = 213; // Magenta for layer 3 (rightmost indicator only)
+            } else if (layer_state_cmp(state, 2)) {
+                h = 200; // Purple for layer 2 (all indicators)
+            } else if (layer_state_cmp(state, 1)) {
+                h = 170; // Blue for layer 1 (all indicators)
+            } else {
+                h = 0; // Red for layer 0 (all indicators)
+            }
+
+	    color = hsv_to_rgb((HSV){ h, current_indicator_p -> s, current_indicator_p -> v});
             rgblight_setrgb_at(color.r, color.g, color.b, current_indicator_p -> index);
         }
         else rgblight_setrgb_at( RGB_OFF, current_indicator_p -> index);
@@ -187,6 +207,12 @@ bool led_update_kb(led_t led_state) {
 // This function is called when layers change
 layer_state_t layer_state_set_kb(layer_state_t state) {
     state = layer_state_set_user(state);
+    // Update underglow color based on active layer
+    if (layer_state_cmp(state, 1)) {
+        rgblight_sethsv_noeeprom(170, 255, 200);  // Blue for layer 1
+    } else {
+        rgblight_sethsv_noeeprom(0, 255, 200);    // Red for layer 0
+    }
     indicators_callback_state(state);
     return state;
 }
@@ -199,6 +225,36 @@ void keyboard_post_init_kb(void) {
 
     keyboard_post_init_user();
 }
+
+#ifdef OS_DETECTION_ENABLE
+bool process_detected_host_os_kb(os_variant_t detected_os) {
+    if (!process_detected_host_os_user(detected_os)) {
+        return false;
+    }
+    switch (detected_os) {
+        case OS_MACOS:
+        case OS_IOS:
+            layer_on(0);
+            rgblight_sethsv_noeeprom(0, 255, 200);    // Red for layer 0 (macOS/iOS)
+            indicators_callback();
+            break;
+        case OS_WINDOWS:
+            layer_on(1);
+            rgblight_sethsv_noeeprom(170, 255, 200);  // Blue for layer 1 (Windows)
+            indicators_callback();
+            break;
+        case OS_LINUX:
+            layer_on(0);
+            rgblight_sethsv_noeeprom(0, 255, 200);    // Red for layer 0 (Linux)
+            indicators_callback();
+            break;
+        case OS_UNSURE:
+            break;
+    }
+
+    return true;
+}
+#endif // OS_DETECTION_ENABLE
 
 // VIA CONFIGURATION -------------------------------------------------------------------------------
 #ifdef VIA_ENABLE
@@ -321,6 +377,7 @@ void indicator_config_save(void)
 {
     eeconfig_update_kb_datablock(&indicators, 0, sizeof(indicators));
 }
+
 
 void via_custom_value_command_kb(uint8_t *data, uint8_t length) {
     // data = [ command_id, channel_id, value_id, value_data ]
