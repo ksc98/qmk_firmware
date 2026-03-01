@@ -37,7 +37,7 @@
         "mediakey": true,
         "extrakey": true,
         "rgblight": true,
-        "nkro": false
+        "nkro": true
     },
     "build": {
         "lto": true
