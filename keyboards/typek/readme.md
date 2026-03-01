@@ -18,13 +18,17 @@ The DFU state in the bootloader can be accessed in 3 ways:
 
 ### How to compile and flash
 
-
-After setting up your build environment, you can compile the Iron 165R2 default keymap by using one of the options below.
-
-    make typek:default
-
 And use dfu-util in the command line or through a GUI like QMK toolbox to upload the firmware to the PCB. To directly flash the PCB after it is put into a DFU state, use:
 
-    make typek:default:flash
+    qmk flash -kb typek -km via
 
 See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_tools) and the [make instructions](https://docs.qmk.fm/#/getting_started_make_guide) for more information. Brand new to QMK? Start with our [Complete Newbs Guide](https://docs.qmk.fm/#/newbs).
+
+## VIA on Linux
+
+The board exposes its VIA interface as a raw HID device (usage page `0xFF60`). On Linux the matching `/dev/hidraw*` node is root-only by default, so [usevia.app](https://usevia.app) can see the keyboard through WebHID but gets no response ("does not seem to respond like a VIA-enabled keyboard"). Grant the logged-in user access with a udev rule:
+
+    # /etc/udev/rules.d/70-typek-via-uaccess.rules
+    SUBSYSTEM=="hidraw", ATTRS{idVendor}=="7179", ATTRS{idProduct}=="8475", TAG+="uaccess"
+
+Then `sudo udevadm control --reload` and replug the keyboard. Older `qmk_udev` helpers (e.g. the 0.1.2 bundled with the Arch `qmk` 1.2.0 package) only grant access to the console interface, not raw HID, which is why this rule is needed even with the QMK udev rules installed. Current upstream `qmk_udev` tags raw HID too.
