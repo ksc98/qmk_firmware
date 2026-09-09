@@ -32,6 +32,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define HOLD_ON_OTHER_KEY_PRESS
 #define TAPPING_TERM 200
 
+/* VIA layout options as reported after an EEPROM reset. VIA packs the labels in
+ * typek.json first-to-last into high-to-low bits: split backspace = bit 3,
+ * split left space = bit 2, split right space = bit 1, split right shift = bit 0.
+ * This board has only the left space split (Space + Fn). */
+#define VIA_EEPROM_LAYOUT_OPTIONS_DEFAULT 0x04
+
 /* LED MAP
 		0 , 1 , 2														Three indicators
 		3 , 4 , 5														Three RGBs on left side
