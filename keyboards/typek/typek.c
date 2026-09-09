@@ -416,8 +416,9 @@ void via_custom_value_command_kb(uint8_t *data, uint8_t length) {
     *command_id = id_unhandled;
 }
 // HOST-DRIVEN LAYER CONTROL ----------------------------------------------------------------------
-// Raw HID command outside VIA's id range, sent by typek-layerd (ksc98/rigtop) when a game gains
-// or loses focus: [id_host_layer, layer, 1 = on / 0 = off]. Handled fully here; no reply.
+// Raw HID command outside VIA's id range, sent by qmk-autolayer (github.com/ksc98/qmk-autolayer)
+// when a matching window gains or loses focus: [id_host_layer, layer, 1 = on / 0 = off].
+// Handled fully here; no reply.
 #define id_host_layer 0x42
 
 bool via_command_kb(uint8_t *data, uint8_t length) {
