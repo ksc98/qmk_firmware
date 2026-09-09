@@ -32,3 +32,11 @@ The board exposes its VIA interface as a raw HID device (usage page `0xFF60`). O
     SUBSYSTEM=="hidraw", ATTRS{idVendor}=="7179", ATTRS{idProduct}=="8475", TAG+="uaccess"
 
 Then `sudo udevadm control --reload` and replug the keyboard. Older `qmk_udev` helpers (e.g. the 0.1.2 bundled with the Arch `qmk` 1.2.0 package) only grant access to the console interface, not raw HID, which is why this rule is needed even with the QMK udev rules installed. Current upstream `qmk_udev` tags raw HID too.
+
+## Host-driven layer switching (raw HID)
+
+The VIA keymap accepts one extra raw-HID command, outside VIA's id range, so a host daemon can turn a layer on or off — e.g. the gaming layer while a game has focus. Report layout (32 bytes, unused bytes zero):
+
+    [0x42, layer, state]    state: 1 = layer_on, 0 = layer_off
+
+Handled in `via_command_kb` in `typek.c`; layers outside the dynamic keymap range are ignored, and no reply is sent. The Linux daemon that drives it is `typek-layerd` in [ksc98/rigtop](https://github.com/ksc98/rigtop): it follows Hyprland focus events and matches the focused window's class or executable against `~/.config/typek-layerd/allowlist`. It needs the same hidraw udev rule as VIA above.
