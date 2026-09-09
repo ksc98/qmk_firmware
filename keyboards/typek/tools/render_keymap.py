@@ -65,9 +65,9 @@ def parse_layers(src: str):
 def short(tok: str) -> str:
     if tok in LABELS:
         return LABELS[tok]
-    mo = re.fullmatch(r"MO\((\d+)\)", tok)
-    if mo:
-        return "MO" + mo.group(1)
+    lk = re.fullmatch(r"(MO|TG)\((\d+)\)", tok)
+    if lk:
+        return lk.group(1) + lk.group(2)
     return tok[3:] if tok.startswith("KC_") else tok
 
 
@@ -95,7 +95,7 @@ def main():
     for idx, name, toks in layers:
         title = f"Layer [{idx}]" + (f"  —  {name}" if name else "")
         reach = {0: "always active",
-                 1: "UNREACHABLE (its MO(1) key is the missing one right of RShift)",
+                 1: "Windows: auto-on when a Windows host is detected; Fn+` (TG(1)) toggles it",
                  2: "VIA-selectable (GUI/Alt swapped)",
                  3: "hold MO(3)  (left thumb)"}.get(idx, "")
         print(title + (f"   [{reach}]" if reach else ""))

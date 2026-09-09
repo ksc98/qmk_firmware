@@ -14,7 +14,7 @@ Layer [0]  —  Base   [always active]
   ▌  
              LAlt                    LGUI  Spc   MO3         Spc   Spc   RAlt                          RGUI
 
-Layer [1]   [UNREACHABLE (its MO(1) key is the missing one right of RShift)]
+Layer [1]   [Windows: auto-on when a Windows host is detected; Fn+` (TG(1)) toggles it]
   ▽          Esc    ▽     ▽     ▽     ▽     ▽     ▽           ▽     ▽     ▽     ▽     ▽     ▽     ▽     ✗
   ▽           ▽     ▽     ▽     ▽     ▽     ▽                 ▽     ▽     ▽     ▽     ▽     ▽     ▽     ▽
   ▽          RCtl   ▽     ▽     ▽     ▽     ▽                 ▽     ▽     ▽     ▽     ▽     ▽           ▽
@@ -31,7 +31,7 @@ Layer [2]  —  Base with swapped GUI/Alt   [VIA-selectable (GUI/Alt swapped)]
              LGUI                    LAlt  Spc   MO3         Spc   Spc   RAlt                          RGUI
 
 Layer [3]   [hold MO(3)  (left thumb)]
-  ▽           ▽     F1    F2    F3    F4    F5    F6          F7    F8    F9   F10   F11   F12   Del    ✗
+ TG1          ▽     F1    F2    F3    F4    F5    F6          F7    F8    F9   F10   F11   F12   Del    ✗
   ▽           ▽    Val-  Val+   ▽     ▽   UGtog               ▽     ▽     ▽     ▽     ▽    Sat-  Sat+   ▽
 EEclr         ▽     ▽     ▽     ▽     ▽     ▽                 ←     ↓     ↑     →     ▽     ▽           ▽
  BOOT         ▽    Vol-  Vol+   ▽     ▽     ▽                 ▽     ▽     ▽     ▽     ▽    Hue-  Hue+   ✗
