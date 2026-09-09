@@ -39,4 +39,4 @@ The VIA keymap accepts one extra raw-HID command, outside VIA's id range, so a h
 
     [0x42, layer, state]    state: 1 = layer_on, 0 = layer_off
 
-Handled in `via_command_kb` in `typek.c`; layers outside the dynamic keymap range are ignored, and no reply is sent. The Linux daemon that drives it is `typek-layerd` in [ksc98/rigtop](https://github.com/ksc98/rigtop): it follows Hyprland focus events and matches the focused window's class or executable against `~/.config/typek-layerd/allowlist`. It needs the same hidraw udev rule as VIA above.
+Handled in `via_command_kb` in `typek.c`; layers outside the dynamic keymap range are ignored, and no reply is sent. The Linux daemon that drives it is [qmk-autolayer](https://github.com/ksc98/qmk-autolayer): it follows Hyprland focus events and matches the focused window's class or executable against rules in `~/.config/qmk-autolayer/config.toml`. It needs the same hidraw udev rule as VIA above.
