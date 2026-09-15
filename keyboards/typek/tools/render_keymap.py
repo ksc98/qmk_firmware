@@ -97,7 +97,8 @@ def main():
         reach = {0: "always active",
                  1: "Windows: auto-on when a Windows host is detected; Fn+` (TG(1)) toggles it",
                  2: "VIA-selectable (GUI/Alt swapped)",
-                 3: "hold MO(3)  (left thumb)"}.get(idx, "")
+                 3: "hold MO(3)  (left thumb)",
+                 4: "host-driven: qmk-autolayer turns it on while Valheim has focus"}.get(idx, "")
         print(title + (f"   [{reach}]" if reach else ""))
         print(render(name, toks))
         print()
