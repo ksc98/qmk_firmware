@@ -38,12 +38,12 @@ EEclr         ▽     ▽     ▽     ▽     ▽     ▽                 ←   
   ▌  
               ▽                       ▽     ▽     ▽           ▽    Play   ▽                             ▽
 
-Layer [4]  —  Game: Caps is a plain Right Ctrl   [host-driven: qmk-autolayer turns it on while Valheim has focus]
+Layer [4]  —  Game: Caps is a plain Right Ctrl, bottom-left is Left Ctrl   [host-driven: qmk-autolayer turns it on while Valheim has focus]
   ▽           ▽     ▽     ▽     ▽     ▽     ▽     ▽           ▽     ▽     ▽     ▽     ▽     ▽     ▽     ✗
   ▽           ▽     ▽     ▽     ▽     ▽     ▽                 ▽     ▽     ▽     ▽     ▽     ▽     ▽     ▽
   ▽          RCtl   ▽     ▽     ▽     ▽     ▽                 ▽     ▽     ▽     ▽     ▽     ▽           ▽
   ▽           ▽     ▽     ▽     ▽     ▽     ▽                 ▽     ▽     ▽     ▽     ▽     ▽     ▽     ✗
   ▌  
-              ▽                       ▽     ▽     ▽           ▽     ▽     ▽                             ▽
+             LCtl                     ▽     ▽     ▽           ▽     ▽     ▽                             ▽
 
 ```
