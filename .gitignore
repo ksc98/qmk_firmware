@@ -128,3 +128,6 @@ compile_commands.json
 via*.json
 /keyboards/**/keymaps/via/*
 /keyboards/**/keymaps/vial/*
+
+# TypeK layout render, shown in keyboards/typek/readme.md (make -C keyboards/typek kle)
+!/keyboards/typek/typek-layout.svg

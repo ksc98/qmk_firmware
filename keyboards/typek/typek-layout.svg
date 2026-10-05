@@ -1,0 +1,381 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1107" height="412" viewBox="0 0 1107 412" font-family="Helvetica, Arial, sans-serif">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<rect x="1" y="1" width="1105.10" height="364.28" rx="6" fill="#eeeeee" stroke="#dddddd"/>
+<g transform="rotate(0.0 23.00 -35.30)">
+<rect x="841.60" y="30.00" width="53.00" height="53.00" rx="5" fill="#cccccc" stroke="#000000"/>
+<rect x="847.10" y="32.50" width="42.00" height="42.00" rx="3" fill="#f5f5f5" stroke="#0000001a"/>
+<text x="850.10" y="45.50" font-size="12" fill="#000000" text-anchor="start">_</text>
+<text x="850.10" y="70.50" font-size="12" fill="#000000" text-anchor="start">-</text>
+<text x="886.10" y="70.50" font-size="12" fill="#c0392b" text-anchor="end">F11</text>
+</g>
+<g transform="rotate(0.0 23.00 -35.30)">
+<rect x="64.00" y="32.70" width="53.00" height="53.00" rx="5" fill="#777777" stroke="#000000"/>
+<rect x="69.50" y="35.20" width="42.00" height="42.00" rx="3" fill="#8f8f8f" stroke="#0000001a"/>
+<text x="72.50" y="48.20" font-size="12" fill="#000000" text-anchor="start">~</text>
+<text x="72.50" y="73.20" font-size="12" fill="#000000" text-anchor="start">`</text>
+<text x="108.50" y="73.20" font-size="12" fill="#c0392b" text-anchor="end">TG1</text>
+</g>
+<g transform="rotate(0.0 23.00 -35.30)">
+<rect x="155.80" y="32.70" width="53.00" height="53.00" rx="5" fill="#cccccc" stroke="#000000"/>
+<rect x="161.30" y="35.20" width="42.00" height="42.00" rx="3" fill="#f5f5f5" stroke="#0000001a"/>
+<text x="164.30" y="48.20" font-size="12" fill="#000000" text-anchor="start">Esc</text>
+<text x="164.30" y="73.20" font-size="12" fill="#000000" text-anchor="start">` ~</text>
+</g>
+<g transform="rotate(0.0 23.00 -35.30)">
+<rect x="209.80" y="32.70" width="53.00" height="53.00" rx="5" fill="#cccccc" stroke="#000000"/>
+<rect x="215.30" y="35.20" width="42.00" height="42.00" rx="3" fill="#f5f5f5" stroke="#0000001a"/>
+<text x="218.30" y="48.20" font-size="12" fill="#000000" text-anchor="start">!</text>
+<text x="218.30" y="73.20" font-size="12" fill="#000000" text-anchor="start">1</text>
+<text x="254.30" y="73.20" font-size="12" fill="#c0392b" text-anchor="end">F1</text>
+</g>
+<g transform="rotate(0.0 23.00 -35.30)">
+<rect x="895.60" y="32.70" width="53.00" height="53.00" rx="5" fill="#cccccc" stroke="#000000"/>
+<rect x="901.10" y="35.20" width="42.00" height="42.00" rx="3" fill="#f5f5f5" stroke="#0000001a"/>
+<text x="904.10" y="48.20" font-size="12" fill="#000000" text-anchor="start">+</text>
+<text x="904.10" y="73.20" font-size="12" fill="#000000" text-anchor="start">=</text>
+<text x="940.10" y="73.20" font-size="12" fill="#c0392b" text-anchor="end">F12</text>
+</g>
+<g transform="rotate(0.0 23.00 -35.30)">
+<rect x="949.60" y="32.70" width="107.00" height="53.00" rx="5" fill="#aaaaaa" stroke="#000000"/>
+<rect x="955.10" y="35.20" width="96.00" height="42.00" rx="3" fill="#cccccc" stroke="#0000001a"/>
+<text x="958.10" y="48.20" font-size="12" fill="#000000" text-anchor="start">Backspace</text>
+<text x="1048.10" y="73.20" font-size="12" fill="#c0392b" text-anchor="end">Del</text>
+</g>
+<g transform="rotate(0.0 23.00 -35.30)">
+<rect x="833.50" y="84.00" width="53.00" height="53.00" rx="5" fill="#cccccc" stroke="#000000"/>
+<rect x="839.00" y="86.50" width="42.00" height="42.00" rx="3" fill="#f5f5f5" stroke="#0000001a"/>
+<text x="842.00" y="99.50" font-size="12" fill="#000000" text-anchor="start">P</text>
+</g>
+<g transform="rotate(0.0 23.00 -35.30)">
+<rect x="50.50" y="86.70" width="53.00" height="53.00" rx="5" fill="#cccccc" stroke="#000000"/>
+<rect x="56.00" y="89.20" width="42.00" height="42.00" rx="3" fill="#f5f5f5" stroke="#0000001a"/>
+<text x="59.00" y="102.20" font-size="12" fill="#000000" text-anchor="start">Pause</text>
+</g>
+<g transform="rotate(0.0 23.00 -35.30)">
+<rect x="145.00" y="86.70" width="80.00" height="53.00" rx="5" fill="#aaaaaa" stroke="#000000"/>
+<rect x="150.50" y="89.20" width="69.00" height="42.00" rx="3" fill="#cccccc" stroke="#0000001a"/>
+<text x="153.50" y="102.20" font-size="12" fill="#000000" text-anchor="start">Tab</text>
+</g>
+<g transform="rotate(0.0 23.00 -35.30)">
+<rect x="226.00" y="86.70" width="53.00" height="53.00" rx="5" fill="#cccccc" stroke="#000000"/>
+<rect x="231.50" y="89.20" width="42.00" height="42.00" rx="3" fill="#f5f5f5" stroke="#0000001a"/>
+<text x="234.50" y="102.20" font-size="12" fill="#000000" text-anchor="start">Q</text>
+<text x="270.50" y="127.20" font-size="12" fill="#c0392b" text-anchor="end">Val-</text>
+</g>
+<g transform="rotate(0.0 23.00 -35.30)">
+<rect x="887.50" y="86.70" width="53.00" height="53.00" rx="5" fill="#cccccc" stroke="#000000"/>
+<rect x="893.00" y="89.20" width="42.00" height="42.00" rx="3" fill="#f5f5f5" stroke="#0000001a"/>
+<text x="896.00" y="102.20" font-size="12" fill="#000000" text-anchor="start">{</text>
+<text x="896.00" y="127.20" font-size="12" fill="#000000" text-anchor="start">[</text>
+<text x="932.00" y="127.20" font-size="12" fill="#c0392b" text-anchor="end">Sat-</text>
+</g>
+<g transform="rotate(0.0 23.00 -35.30)">
+<rect x="941.50" y="86.70" width="53.00" height="53.00" rx="5" fill="#cccccc" stroke="#000000"/>
+<rect x="947.00" y="89.20" width="42.00" height="42.00" rx="3" fill="#f5f5f5" stroke="#0000001a"/>
+<text x="950.00" y="102.20" font-size="12" fill="#000000" text-anchor="start">}</text>
+<text x="950.00" y="127.20" font-size="12" fill="#000000" text-anchor="start">]</text>
+<text x="986.00" y="127.20" font-size="12" fill="#c0392b" text-anchor="end">Sat+</text>
+</g>
+<g transform="rotate(0.0 23.00 -35.30)">
+<rect x="995.50" y="86.70" width="80.00" height="53.00" rx="5" fill="#aaaaaa" stroke="#000000"/>
+<rect x="1001.00" y="89.20" width="69.00" height="42.00" rx="3" fill="#cccccc" stroke="#0000001a"/>
+<text x="1004.00" y="102.20" font-size="12" fill="#000000" text-anchor="start">|</text>
+<text x="1004.00" y="127.20" font-size="12" fill="#000000" text-anchor="start">\</text>
+</g>
+<g transform="rotate(0.0 23.00 -35.30)">
+<rect x="37.00" y="140.70" width="53.00" height="53.00" rx="5" fill="#cccccc" stroke="#000000"/>
+<rect x="42.50" y="143.20" width="42.00" height="42.00" rx="3" fill="#f5f5f5" stroke="#0000001a"/>
+<text x="45.50" y="156.20" font-size="12" fill="#000000" text-anchor="start">ScrLk</text>
+<text x="81.50" y="181.20" font-size="12" fill="#c0392b" text-anchor="end">EEclr</text>
+</g>
+<g transform="rotate(0.0 23.00 -35.30)">
+<rect x="134.20" y="140.70" width="93.50" height="53.00" rx="5" fill="#aaaaaa" stroke="#000000"/>
+<rect x="139.70" y="143.20" width="82.50" height="42.00" rx="3" fill="#cccccc" stroke="#0000001a"/>
+<text x="142.70" y="156.20" font-size="12" fill="#000000" text-anchor="start">Ctrl</text>
+<text x="142.70" y="181.20" font-size="12" fill="#000000" text-anchor="start">tap Esc</text>
+</g>
+<g transform="rotate(0.0 23.00 -35.30)">
+<rect x="228.70" y="140.70" width="53.00" height="53.00" rx="5" fill="#cccccc" stroke="#000000"/>
+<rect x="234.20" y="143.20" width="42.00" height="42.00" rx="3" fill="#f5f5f5" stroke="#0000001a"/>
+<text x="237.20" y="156.20" font-size="12" fill="#000000" text-anchor="start">A</text>
+</g>
+<g transform="rotate(0.0 23.00 -35.30)">
+<rect x="855.10" y="140.70" width="53.00" height="53.00" rx="5" fill="#cccccc" stroke="#000000"/>
+<rect x="860.60" y="143.20" width="42.00" height="42.00" rx="3" fill="#f5f5f5" stroke="#0000001a"/>
+<text x="863.60" y="156.20" font-size="12" fill="#000000" text-anchor="start">:</text>
+<text x="863.60" y="181.20" font-size="12" fill="#000000" text-anchor="start">;</text>
+</g>
+<g transform="rotate(0.0 23.00 -35.30)">
+<rect x="909.10" y="140.70" width="53.00" height="53.00" rx="5" fill="#cccccc" stroke="#000000"/>
+<rect x="914.60" y="143.20" width="42.00" height="42.00" rx="3" fill="#f5f5f5" stroke="#0000001a"/>
+<text x="917.60" y="156.20" font-size="12" fill="#000000" text-anchor="start">&quot;</text>
+<text x="917.60" y="181.20" font-size="12" fill="#000000" text-anchor="start">&#x27;</text>
+</g>
+<g transform="rotate(0.0 23.00 -35.30)">
+<rect x="963.10" y="140.70" width="120.50" height="53.00" rx="5" fill="#777777" stroke="#000000"/>
+<rect x="968.60" y="143.20" width="109.50" height="42.00" rx="3" fill="#8f8f8f" stroke="#0000001a"/>
+<text x="971.60" y="156.20" font-size="12" fill="#000000" text-anchor="start">Enter</text>
+</g>
+<g transform="rotate(0.0 23.00 -35.30)">
+<rect x="23.50" y="194.70" width="53.00" height="53.00" rx="5" fill="#cccccc" stroke="#000000"/>
+<rect x="29.00" y="197.20" width="42.00" height="42.00" rx="3" fill="#f5f5f5" stroke="#0000001a"/>
+<text x="68.00" y="235.20" font-size="12" fill="#c0392b" text-anchor="end">BOOT</text>
+</g>
+<g transform="rotate(0.0 23.00 -35.30)">
+<rect x="120.70" y="194.70" width="120.50" height="53.00" rx="5" fill="#aaaaaa" stroke="#000000"/>
+<rect x="126.20" y="197.20" width="109.50" height="42.00" rx="3" fill="#cccccc" stroke="#0000001a"/>
+<text x="129.20" y="210.20" font-size="12" fill="#000000" text-anchor="start">Shift</text>
+</g>
+<g transform="rotate(0.0 23.00 -35.30)">
+<rect x="242.20" y="194.70" width="53.00" height="53.00" rx="5" fill="#cccccc" stroke="#000000"/>
+<rect x="247.70" y="197.20" width="42.00" height="42.00" rx="3" fill="#f5f5f5" stroke="#0000001a"/>
+<text x="250.70" y="210.20" font-size="12" fill="#000000" text-anchor="start">Z</text>
+<text x="286.70" y="235.20" font-size="12" fill="#c0392b" text-anchor="end">Vol-</text>
+</g>
+<g transform="rotate(0.0 23.00 -35.30)">
+<rect x="838.90" y="194.70" width="53.00" height="53.00" rx="5" fill="#cccccc" stroke="#000000"/>
+<rect x="844.40" y="197.20" width="42.00" height="42.00" rx="3" fill="#f5f5f5" stroke="#0000001a"/>
+<text x="847.40" y="210.20" font-size="12" fill="#000000" text-anchor="start">&gt;</text>
+<text x="847.40" y="235.20" font-size="12" fill="#000000" text-anchor="start">.</text>
+</g>
+<g transform="rotate(0.0 23.00 -35.30)">
+<rect x="892.90" y="194.70" width="53.00" height="53.00" rx="5" fill="#cccccc" stroke="#000000"/>
+<rect x="898.40" y="197.20" width="42.00" height="42.00" rx="3" fill="#f5f5f5" stroke="#0000001a"/>
+<text x="901.40" y="210.20" font-size="12" fill="#000000" text-anchor="start">?</text>
+<text x="901.40" y="235.20" font-size="12" fill="#000000" text-anchor="start">/</text>
+<text x="937.40" y="235.20" font-size="12" fill="#c0392b" text-anchor="end">Hue-</text>
+</g>
+<g transform="rotate(0.0 23.00 -35.30)">
+<rect x="946.90" y="194.70" width="120.50" height="53.00" rx="5" fill="#aaaaaa" stroke="#000000"/>
+<rect x="952.40" y="197.20" width="109.50" height="42.00" rx="3" fill="#cccccc" stroke="#0000001a"/>
+<text x="955.40" y="210.20" font-size="12" fill="#000000" text-anchor="start">Shift</text>
+<text x="1058.90" y="235.20" font-size="12" fill="#c0392b" text-anchor="end">Hue+</text>
+</g>
+<g transform="rotate(0.0 23.00 -35.30)">
+<rect x="120.70" y="248.70" width="80.00" height="53.00" rx="5" fill="#aaaaaa" stroke="#000000"/>
+<rect x="126.20" y="251.20" width="69.00" height="42.00" rx="3" fill="#cccccc" stroke="#0000001a"/>
+<text x="129.20" y="264.20" font-size="12" fill="#000000" text-anchor="start">Alt</text>
+</g>
+<g transform="rotate(0.0 23.00 -35.30)">
+<rect x="960.40" y="248.70" width="80.00" height="53.00" rx="5" fill="#aaaaaa" stroke="#000000"/>
+<rect x="965.90" y="251.20" width="69.00" height="42.00" rx="3" fill="#cccccc" stroke="#0000001a"/>
+<text x="968.90" y="264.20" font-size="12" fill="#000000" text-anchor="start">Super</text>
+</g>
+<g transform="rotate(10 23.00 -35.30)">
+<rect x="282.70" y="-21.30" width="53.00" height="53.00" rx="5" fill="#cccccc" stroke="#000000"/>
+<rect x="288.20" y="-18.80" width="42.00" height="42.00" rx="3" fill="#f5f5f5" stroke="#0000001a"/>
+<text x="291.20" y="-5.80" font-size="12" fill="#000000" text-anchor="start">@</text>
+<text x="291.20" y="19.20" font-size="12" fill="#000000" text-anchor="start">2</text>
+<text x="327.20" y="19.20" font-size="12" fill="#c0392b" text-anchor="end">F2</text>
+</g>
+<g transform="rotate(10 23.00 -35.30)">
+<rect x="336.70" y="-21.30" width="53.00" height="53.00" rx="5" fill="#cccccc" stroke="#000000"/>
+<rect x="342.20" y="-18.80" width="42.00" height="42.00" rx="3" fill="#f5f5f5" stroke="#0000001a"/>
+<text x="345.20" y="-5.80" font-size="12" fill="#000000" text-anchor="start">#</text>
+<text x="345.20" y="19.20" font-size="12" fill="#000000" text-anchor="start">3</text>
+<text x="381.20" y="19.20" font-size="12" fill="#c0392b" text-anchor="end">F3</text>
+</g>
+<g transform="rotate(10 23.00 -35.30)">
+<rect x="390.70" y="-21.30" width="53.00" height="53.00" rx="5" fill="#cccccc" stroke="#000000"/>
+<rect x="396.20" y="-18.80" width="42.00" height="42.00" rx="3" fill="#f5f5f5" stroke="#0000001a"/>
+<text x="399.20" y="-5.80" font-size="12" fill="#000000" text-anchor="start">$</text>
+<text x="399.20" y="19.20" font-size="12" fill="#000000" text-anchor="start">4</text>
+<text x="435.20" y="19.20" font-size="12" fill="#c0392b" text-anchor="end">F4</text>
+</g>
+<g transform="rotate(10 23.00 -35.30)">
+<rect x="444.70" y="-21.30" width="53.00" height="53.00" rx="5" fill="#cccccc" stroke="#000000"/>
+<rect x="450.20" y="-18.80" width="42.00" height="42.00" rx="3" fill="#f5f5f5" stroke="#0000001a"/>
+<text x="453.20" y="-5.80" font-size="12" fill="#000000" text-anchor="start">%</text>
+<text x="453.20" y="19.20" font-size="12" fill="#000000" text-anchor="start">5</text>
+<text x="489.20" y="19.20" font-size="12" fill="#c0392b" text-anchor="end">F5</text>
+</g>
+<g transform="rotate(10 23.00 -35.30)">
+<rect x="498.70" y="-21.30" width="53.00" height="53.00" rx="5" fill="#cccccc" stroke="#000000"/>
+<rect x="504.20" y="-18.80" width="42.00" height="42.00" rx="3" fill="#f5f5f5" stroke="#0000001a"/>
+<text x="507.20" y="-5.80" font-size="12" fill="#000000" text-anchor="start">^</text>
+<text x="507.20" y="19.20" font-size="12" fill="#000000" text-anchor="start">6</text>
+<text x="543.20" y="19.20" font-size="12" fill="#c0392b" text-anchor="end">F6</text>
+</g>
+<g transform="rotate(10 23.00 -35.30)">
+<rect x="312.40" y="32.70" width="53.00" height="53.00" rx="5" fill="#cccccc" stroke="#000000"/>
+<rect x="317.90" y="35.20" width="42.00" height="42.00" rx="3" fill="#f5f5f5" stroke="#0000001a"/>
+<text x="320.90" y="48.20" font-size="12" fill="#000000" text-anchor="start">W</text>
+<text x="356.90" y="73.20" font-size="12" fill="#c0392b" text-anchor="end">Val+</text>
+</g>
+<g transform="rotate(10 23.00 -35.30)">
+<rect x="366.40" y="32.70" width="53.00" height="53.00" rx="5" fill="#cccccc" stroke="#000000"/>
+<rect x="371.90" y="35.20" width="42.00" height="42.00" rx="3" fill="#f5f5f5" stroke="#0000001a"/>
+<text x="374.90" y="48.20" font-size="12" fill="#000000" text-anchor="start">E</text>
+</g>
+<g transform="rotate(10 23.00 -35.30)">
+<rect x="420.40" y="32.70" width="53.00" height="53.00" rx="5" fill="#cccccc" stroke="#000000"/>
+<rect x="425.90" y="35.20" width="42.00" height="42.00" rx="3" fill="#f5f5f5" stroke="#0000001a"/>
+<text x="428.90" y="48.20" font-size="12" fill="#000000" text-anchor="start">R</text>
+</g>
+<g transform="rotate(10 23.00 -35.30)">
+<rect x="474.40" y="32.70" width="53.00" height="53.00" rx="5" fill="#cccccc" stroke="#000000"/>
+<rect x="479.90" y="35.20" width="42.00" height="42.00" rx="3" fill="#f5f5f5" stroke="#0000001a"/>
+<text x="482.90" y="48.20" font-size="12" fill="#000000" text-anchor="start">T</text>
+<text x="518.90" y="73.20" font-size="12" fill="#c0392b" text-anchor="end">UGtog</text>
+</g>
+<g transform="rotate(10 23.00 -35.30)">
+<rect x="325.90" y="86.70" width="53.00" height="53.00" rx="5" fill="#cccccc" stroke="#000000"/>
+<rect x="331.40" y="89.20" width="42.00" height="42.00" rx="3" fill="#f5f5f5" stroke="#0000001a"/>
+<text x="334.40" y="102.20" font-size="12" fill="#000000" text-anchor="start">S</text>
+</g>
+<g transform="rotate(10 23.00 -35.30)">
+<rect x="379.90" y="86.70" width="53.00" height="53.00" rx="5" fill="#cccccc" stroke="#000000"/>
+<rect x="385.40" y="89.20" width="42.00" height="42.00" rx="3" fill="#f5f5f5" stroke="#0000001a"/>
+<text x="388.40" y="102.20" font-size="12" fill="#000000" text-anchor="start">D</text>
+</g>
+<g transform="rotate(10 23.00 -35.30)">
+<rect x="433.90" y="86.70" width="53.00" height="53.00" rx="5" fill="#cccccc" stroke="#000000"/>
+<rect x="439.40" y="89.20" width="42.00" height="42.00" rx="3" fill="#f5f5f5" stroke="#0000001a"/>
+<text x="442.40" y="102.20" font-size="12" fill="#000000" text-anchor="start">F</text>
+</g>
+<g transform="rotate(10 23.00 -35.30)">
+<rect x="487.90" y="86.70" width="53.00" height="53.00" rx="5" fill="#cccccc" stroke="#000000"/>
+<rect x="493.40" y="89.20" width="42.00" height="42.00" rx="3" fill="#f5f5f5" stroke="#0000001a"/>
+<text x="496.40" y="102.20" font-size="12" fill="#000000" text-anchor="start">G</text>
+</g>
+<g transform="rotate(10 23.00 -35.30)">
+<rect x="350.20" y="140.70" width="53.00" height="53.00" rx="5" fill="#cccccc" stroke="#000000"/>
+<rect x="355.70" y="143.20" width="42.00" height="42.00" rx="3" fill="#f5f5f5" stroke="#0000001a"/>
+<text x="358.70" y="156.20" font-size="12" fill="#000000" text-anchor="start">X</text>
+<text x="394.70" y="181.20" font-size="12" fill="#c0392b" text-anchor="end">Vol+</text>
+</g>
+<g transform="rotate(10 23.00 -35.30)">
+<rect x="404.20" y="140.70" width="53.00" height="53.00" rx="5" fill="#cccccc" stroke="#000000"/>
+<rect x="409.70" y="143.20" width="42.00" height="42.00" rx="3" fill="#f5f5f5" stroke="#0000001a"/>
+<text x="412.70" y="156.20" font-size="12" fill="#000000" text-anchor="start">C</text>
+</g>
+<g transform="rotate(10 23.00 -35.30)">
+<rect x="458.20" y="140.70" width="53.00" height="53.00" rx="5" fill="#cccccc" stroke="#000000"/>
+<rect x="463.70" y="143.20" width="42.00" height="42.00" rx="3" fill="#f5f5f5" stroke="#0000001a"/>
+<text x="466.70" y="156.20" font-size="12" fill="#000000" text-anchor="start">V</text>
+</g>
+<g transform="rotate(10 23.00 -35.30)">
+<rect x="512.20" y="140.70" width="53.00" height="53.00" rx="5" fill="#cccccc" stroke="#000000"/>
+<rect x="517.70" y="143.20" width="42.00" height="42.00" rx="3" fill="#f5f5f5" stroke="#0000001a"/>
+<text x="520.70" y="156.20" font-size="12" fill="#000000" text-anchor="start">B</text>
+</g>
+<g transform="rotate(10 23.00 -35.30)">
+<rect x="352.90" y="194.70" width="80.00" height="53.00" rx="5" fill="#aaaaaa" stroke="#000000"/>
+<rect x="358.40" y="197.20" width="69.00" height="42.00" rx="3" fill="#cccccc" stroke="#0000001a"/>
+<text x="361.40" y="210.20" font-size="12" fill="#000000" text-anchor="start">Super</text>
+</g>
+<g transform="rotate(10 23.00 -35.30)">
+<rect x="433.90" y="194.70" width="107.00" height="53.00" rx="5" fill="#cccccc" stroke="#000000"/>
+<rect x="439.40" y="197.20" width="96.00" height="42.00" rx="3" fill="#f5f5f5" stroke="#0000001a"/>
+</g>
+<g transform="rotate(10 23.00 -35.30)">
+<rect x="541.90" y="194.70" width="53.00" height="53.00" rx="5" fill="#aaaaaa" stroke="#000000"/>
+<rect x="547.40" y="197.20" width="42.00" height="42.00" rx="3" fill="#cccccc" stroke="#0000001a"/>
+<text x="550.40" y="210.20" font-size="12" fill="#000000" text-anchor="start">Fn</text>
+</g>
+<g transform="rotate(-10 23.00 -35.30)">
+<rect x="587.80" y="162.30" width="53.00" height="53.00" rx="5" fill="#cccccc" stroke="#000000"/>
+<rect x="593.30" y="164.80" width="42.00" height="42.00" rx="3" fill="#f5f5f5" stroke="#0000001a"/>
+<text x="596.30" y="177.80" font-size="12" fill="#000000" text-anchor="start">&amp;</text>
+<text x="596.30" y="202.80" font-size="12" fill="#000000" text-anchor="start">7</text>
+<text x="632.30" y="202.80" font-size="12" fill="#c0392b" text-anchor="end">F7</text>
+</g>
+<g transform="rotate(-10 23.00 -35.30)">
+<rect x="641.80" y="162.30" width="53.00" height="53.00" rx="5" fill="#cccccc" stroke="#000000"/>
+<rect x="647.30" y="164.80" width="42.00" height="42.00" rx="3" fill="#f5f5f5" stroke="#0000001a"/>
+<text x="650.30" y="177.80" font-size="12" fill="#000000" text-anchor="start">*</text>
+<text x="650.30" y="202.80" font-size="12" fill="#000000" text-anchor="start">8</text>
+<text x="686.30" y="202.80" font-size="12" fill="#c0392b" text-anchor="end">F8</text>
+</g>
+<g transform="rotate(-10 23.00 -35.30)">
+<rect x="695.80" y="162.30" width="53.00" height="53.00" rx="5" fill="#cccccc" stroke="#000000"/>
+<rect x="701.30" y="164.80" width="42.00" height="42.00" rx="3" fill="#f5f5f5" stroke="#0000001a"/>
+<text x="704.30" y="177.80" font-size="12" fill="#000000" text-anchor="start">(</text>
+<text x="704.30" y="202.80" font-size="12" fill="#000000" text-anchor="start">9</text>
+<text x="740.30" y="202.80" font-size="12" fill="#c0392b" text-anchor="end">F9</text>
+</g>
+<g transform="rotate(-10 23.00 -35.30)">
+<rect x="749.80" y="162.30" width="53.00" height="53.00" rx="5" fill="#cccccc" stroke="#000000"/>
+<rect x="755.30" y="164.80" width="42.00" height="42.00" rx="3" fill="#f5f5f5" stroke="#0000001a"/>
+<text x="758.30" y="177.80" font-size="12" fill="#000000" text-anchor="start">)</text>
+<text x="758.30" y="202.80" font-size="12" fill="#000000" text-anchor="start">0</text>
+<text x="794.30" y="202.80" font-size="12" fill="#c0392b" text-anchor="end">F10</text>
+</g>
+<g transform="rotate(-10 23.00 -35.30)">
+<rect x="566.20" y="216.30" width="53.00" height="53.00" rx="5" fill="#cccccc" stroke="#000000"/>
+<rect x="571.70" y="218.80" width="42.00" height="42.00" rx="3" fill="#f5f5f5" stroke="#0000001a"/>
+<text x="574.70" y="231.80" font-size="12" fill="#000000" text-anchor="start">Y</text>
+</g>
+<g transform="rotate(-10 23.00 -35.30)">
+<rect x="620.20" y="216.30" width="53.00" height="53.00" rx="5" fill="#cccccc" stroke="#000000"/>
+<rect x="625.70" y="218.80" width="42.00" height="42.00" rx="3" fill="#f5f5f5" stroke="#0000001a"/>
+<text x="628.70" y="231.80" font-size="12" fill="#000000" text-anchor="start">U</text>
+</g>
+<g transform="rotate(-10 23.00 -35.30)">
+<rect x="674.20" y="216.30" width="53.00" height="53.00" rx="5" fill="#cccccc" stroke="#000000"/>
+<rect x="679.70" y="218.80" width="42.00" height="42.00" rx="3" fill="#f5f5f5" stroke="#0000001a"/>
+<text x="682.70" y="231.80" font-size="12" fill="#000000" text-anchor="start">I</text>
+</g>
+<g transform="rotate(-10 23.00 -35.30)">
+<rect x="728.20" y="216.30" width="53.00" height="53.00" rx="5" fill="#cccccc" stroke="#000000"/>
+<rect x="733.70" y="218.80" width="42.00" height="42.00" rx="3" fill="#f5f5f5" stroke="#0000001a"/>
+<text x="736.70" y="231.80" font-size="12" fill="#000000" text-anchor="start">O</text>
+</g>
+<g transform="rotate(-10 23.00 -35.30)">
+<rect x="574.30" y="270.30" width="53.00" height="53.00" rx="5" fill="#cccccc" stroke="#000000"/>
+<rect x="579.80" y="272.80" width="42.00" height="42.00" rx="3" fill="#f5f5f5" stroke="#0000001a"/>
+<text x="582.80" y="285.80" font-size="12" fill="#000000" text-anchor="start">H</text>
+<text x="618.80" y="310.80" font-size="12" fill="#c0392b" text-anchor="end">←</text>
+</g>
+<g transform="rotate(-10 23.00 -35.30)">
+<rect x="628.30" y="270.30" width="53.00" height="53.00" rx="5" fill="#cccccc" stroke="#000000"/>
+<rect x="633.80" y="272.80" width="42.00" height="42.00" rx="3" fill="#f5f5f5" stroke="#0000001a"/>
+<text x="636.80" y="285.80" font-size="12" fill="#000000" text-anchor="start">J</text>
+<text x="672.80" y="310.80" font-size="12" fill="#c0392b" text-anchor="end">↓</text>
+</g>
+<g transform="rotate(-10 23.00 -35.30)">
+<rect x="682.30" y="270.30" width="53.00" height="53.00" rx="5" fill="#cccccc" stroke="#000000"/>
+<rect x="687.80" y="272.80" width="42.00" height="42.00" rx="3" fill="#f5f5f5" stroke="#0000001a"/>
+<text x="690.80" y="285.80" font-size="12" fill="#000000" text-anchor="start">K</text>
+<text x="726.80" y="310.80" font-size="12" fill="#c0392b" text-anchor="end">↑</text>
+</g>
+<g transform="rotate(-10 23.00 -35.30)">
+<rect x="736.30" y="270.30" width="53.00" height="53.00" rx="5" fill="#cccccc" stroke="#000000"/>
+<rect x="741.80" y="272.80" width="42.00" height="42.00" rx="3" fill="#f5f5f5" stroke="#0000001a"/>
+<text x="744.80" y="285.80" font-size="12" fill="#000000" text-anchor="start">L</text>
+<text x="780.80" y="310.80" font-size="12" fill="#c0392b" text-anchor="end">→</text>
+</g>
+<g transform="rotate(-10 23.00 -35.30)">
+<rect x="550.00" y="324.30" width="53.00" height="53.00" rx="5" fill="#cccccc" stroke="#000000"/>
+<rect x="555.50" y="326.80" width="42.00" height="42.00" rx="3" fill="#f5f5f5" stroke="#0000001a"/>
+<text x="558.50" y="339.80" font-size="12" fill="#000000" text-anchor="start">B</text>
+</g>
+<g transform="rotate(-10 23.00 -35.30)">
+<rect x="604.00" y="324.30" width="53.00" height="53.00" rx="5" fill="#cccccc" stroke="#000000"/>
+<rect x="609.50" y="326.80" width="42.00" height="42.00" rx="3" fill="#f5f5f5" stroke="#0000001a"/>
+<text x="612.50" y="339.80" font-size="12" fill="#000000" text-anchor="start">N</text>
+</g>
+<g transform="rotate(-10 23.00 -35.30)">
+<rect x="658.00" y="324.30" width="53.00" height="53.00" rx="5" fill="#cccccc" stroke="#000000"/>
+<rect x="663.50" y="326.80" width="42.00" height="42.00" rx="3" fill="#f5f5f5" stroke="#0000001a"/>
+<text x="666.50" y="339.80" font-size="12" fill="#000000" text-anchor="start">M</text>
+</g>
+<g transform="rotate(-10 23.00 -35.30)">
+<rect x="712.00" y="324.30" width="53.00" height="53.00" rx="5" fill="#cccccc" stroke="#000000"/>
+<rect x="717.50" y="326.80" width="42.00" height="42.00" rx="3" fill="#f5f5f5" stroke="#0000001a"/>
+<text x="720.50" y="339.80" font-size="12" fill="#000000" text-anchor="start">&lt;</text>
+<text x="720.50" y="364.80" font-size="12" fill="#000000" text-anchor="start">,</text>
+</g>
+<g transform="rotate(-10 23.00 -35.30)">
+<rect x="523.00" y="378.30" width="161.00" height="53.00" rx="5" fill="#cccccc" stroke="#000000"/>
+<rect x="528.50" y="380.80" width="150.00" height="42.00" rx="3" fill="#f5f5f5" stroke="#0000001a"/>
+<text x="675.50" y="418.80" font-size="12" fill="#c0392b" text-anchor="end">Play</text>
+</g>
+<g transform="rotate(-10 23.00 -35.30)">
+<rect x="685.00" y="378.30" width="80.00" height="53.00" rx="5" fill="#aaaaaa" stroke="#000000"/>
+<rect x="690.50" y="380.80" width="69.00" height="42.00" rx="3" fill="#cccccc" stroke="#0000001a"/>
+<text x="693.50" y="393.80" font-size="12" fill="#000000" text-anchor="start">Alt</text>
+</g>
+<text x="6.00" y="386.28" font-size="15" fill="#337ab7" text-anchor="start">gok TypeK</text>
+<text font-style="italic" x="6.00" y="406.28" font-size="15" fill="#337ab7" text-anchor="start">generated by keyboards/typek/tools/render_kle.py</text>
+</svg>

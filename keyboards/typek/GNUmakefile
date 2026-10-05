@@ -4,13 +4,14 @@
 
 PY := python3
 
-.PHONY: help show-layers save-layers kle
+.PHONY: help show-layers save-layers kle install-hooks
 
 help:
 	@echo "TypeK utilities:"
 	@echo "  make show-layers   print ASCII diagrams of every VIA keymap layer"
 	@echo "  make save-layers   (re)generate layout-diagrams.md"
-	@echo "  make kle           (re)generate typek.kle.json (keyboard-layout-editor.com) + .build/typek.svg"
+	@echo "  make kle           (re)generate typek.kle.json (keyboard-layout-editor.com) + typek-layout.svg (readme)"
+	@echo "  make install-hooks link the pre-commit hook that keeps those + layout-diagrams.md current"
 
 show-layers:
 	@$(PY) tools/render_keymap.py
@@ -27,3 +28,6 @@ save-layers:
 
 kle:
 	@$(PY) tools/render_kle.py
+
+install-hooks:
+	@ln -sf "$(CURDIR)/tools/pre-commit" "$$(git rev-parse --git-path hooks)/pre-commit" && echo "installed pre-commit hook"

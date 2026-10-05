@@ -1,0 +1,8 @@
+#!/bin/sh
+# TypeK pre-commit hook (install: make -C keyboards/typek install-hooks).
+# When a commit touches the keymap, keyboard.json or the layout tooling, regenerate
+# the readme layout image, the KLE json and the ASCII diagrams, and stage them.
+# Renders from the working tree, so stage whole files when changing the keymap.
+git diff --cached --name-only | grep -Eq '^keyboards/typek/(keymaps/via/keymap\.c|keyboard\.json|tools/)' || exit 0
+make -s -C keyboards/typek kle save-layers >/dev/null || exit 1
+git add keyboards/typek/typek-layout.svg keyboards/typek/typek.kle.json keyboards/typek/layout-diagrams.md
