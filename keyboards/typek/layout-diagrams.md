@@ -3,7 +3,7 @@
 Auto-generated from `keymaps/via/keymap.c` by `make save-layers`. Do not edit by hand.
 
 ```text
-TypeK — VIA keymap layers (physical board: no Delete, no key right of RShift)
+TypeK — VIA keymap layers (physical board: no Delete, no key right of RShift, 3u right space)
   ▽ = transparent (falls through)   ✗ = no physical switch   ▌ = underglow LED
 
 Layer [0]  —  Base   [always active]
@@ -12,7 +12,7 @@ Layer [0]  —  Base   [always active]
  Scrl       C/Esc   A     S     D     F     G                 H     J     K     L     ;     '         Enter
   ▽          LSft   Z     X     C     V     B                 B     N     M     ,     .     /    RSft   ✗
   ▌  
-             LAlt                    LGUI  Spc   MO3         Spc   Spc   RAlt                          RGUI
+             LAlt                    LGUI  Spc   MO3          ✗    Spc   RAlt                          RGUI
 
 Layer [1]   [Windows: auto-on when a Windows host is detected; Fn+` (TG(1)) toggles it]
   ▽          Esc    ▽     ▽     ▽     ▽     ▽     ▽           ▽     ▽     ▽     ▽     ▽     ▽     ▽     ✗
@@ -20,7 +20,7 @@ Layer [1]   [Windows: auto-on when a Windows host is detected; Fn+` (TG(1)) togg
   ▽          RCtl   ▽     ▽     ▽     ▽     ▽                 ▽     ▽     ▽     ▽     ▽     ▽           ▽
   ▽           ▽     ▽     ▽     ▽     ▽     ▽                 ▽     ▽     ▽     ▽     ▽     ▽     ▽     ✗
   ▌  
-             LCtl                    LAlt   ▽     ▽           ▽     ▽     ▽                             ▽
+             LCtl                    LAlt   ▽     ▽           ✗     ▽     ▽                             ▽
 
 Layer [2]  —  Base with swapped GUI/Alt   [VIA-selectable (GUI/Alt swapped)]
   `          GEsc   1     2     3     4     5     6           7     8     9     0     -     =    Bspc   ✗
@@ -28,7 +28,7 @@ Layer [2]  —  Base with swapped GUI/Alt   [VIA-selectable (GUI/Alt swapped)]
  Scrl       C/Esc   A     S     D     F     G                 H     J     K     L     ;     '         Enter
   ▽          LSft   Z     X     C     V     B                 B     N     M     ,     .     /    RSft   ✗
   ▌  
-             LGUI                    LAlt  Spc   MO3         Spc   Spc   RAlt                          RGUI
+             LGUI                    LAlt  Spc   MO3          ✗    Spc   RAlt                          RGUI
 
 Layer [3]   [hold MO(3)  (left thumb)]
  TG1          ▽     F1    F2    F3    F4    F5    F6          F7    F8    F9   F10   F11   F12   Del    ✗
@@ -36,7 +36,7 @@ Layer [3]   [hold MO(3)  (left thumb)]
 EEclr         ▽     ▽     ▽     ▽     ▽     ▽                 ←     ↓     ↑     →     ▽     ▽           ▽
  BOOT         ▽    Vol-  Vol+   ▽     ▽     ▽                 ▽     ▽     ▽     ▽     ▽    Hue-  Hue+   ✗
   ▌  
-              ▽                       ▽     ▽     ▽           ▽    Play   ▽                             ▽
+              ▽                       ▽     ▽     ▽           ✗    Play   ▽                             ▽
 
 Layer [4]  —  Game: Caps is a plain Right Ctrl, bottom-left is Left Ctrl   [host-driven: qmk-autolayer turns it on while Valheim has focus]
   ▽           ▽     ▽     ▽     ▽     ▽     ▽     ▽           ▽     ▽     ▽     ▽     ▽     ▽     ▽     ✗
@@ -44,6 +44,6 @@ Layer [4]  —  Game: Caps is a plain Right Ctrl, bottom-left is Left Ctrl   [ho
   ▽          RCtl   ▽     ▽     ▽     ▽     ▽                 ▽     ▽     ▽     ▽     ▽     ▽           ▽
   ▽           ▽     ▽     ▽     ▽     ▽     ▽                 ▽     ▽     ▽     ▽     ▽     ▽     ▽     ✗
   ▌  
-             LCtl                     ▽     ▽     ▽           ▽     ▽     ▽                             ▽
+             LCtl                     ▽     ▽     ▽           ✗     ▽     ▽                             ▽
 
 ```
