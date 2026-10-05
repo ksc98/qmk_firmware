@@ -4,12 +4,13 @@
 
 PY := python3
 
-.PHONY: help show-layers save-layers
+.PHONY: help show-layers save-layers kle
 
 help:
 	@echo "TypeK utilities:"
 	@echo "  make show-layers   print ASCII diagrams of every VIA keymap layer"
 	@echo "  make save-layers   (re)generate layout-diagrams.md"
+	@echo "  make kle           (re)generate typek.kle.json (keyboard-layout-editor.com) + .build/typek.svg"
 
 show-layers:
 	@$(PY) tools/render_keymap.py
@@ -23,3 +24,6 @@ save-layers:
 	   $(PY) tools/render_keymap.py; \
 	   echo '```'; \
 	 } > layout-diagrams.md && echo "wrote $(CURDIR)/layout-diagrams.md"
+
+kle:
+	@$(PY) tools/render_kle.py
