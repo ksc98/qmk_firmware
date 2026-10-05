@@ -2,9 +2,10 @@
 """Render ASCII diagrams of every layer in the TypeK VIA keymap.
 
 Parses keymaps/via/keymap.c live so the output never drifts from the firmware.
-Reflects Kyle's *physical* board: the two switches that exist in the firmware
-LAYOUT but not on the board (top-right Delete, and the MO(1) key right of
-RShift) are drawn as absent (x).
+Reflects Kyle's *physical* board: the three switches that exist in the firmware
+LAYOUT but not on the board (top-right Delete, the MO(1) key right of RShift,
+and the inner 1u of a split right space; his right space is one 3u key) are
+drawn as absent (x).
 
 Run from the keyboard dir:  make show-layers
 """
@@ -16,7 +17,7 @@ KB = Path(__file__).resolve().parent.parent          # keyboards/typek
 KEYMAP = KB / "keymaps" / "via" / "keymap.c"
 
 # Array indices (LAYOUT() order) of positions with no physical switch on the board.
-MISSING = {41, 66}            # 41 = Delete (top-right corner), 66 = MO(1) right of RShift
+MISSING = {41, 61, 66}        # 41 = Delete (top-right corner), 61 = split right space [4,7], 66 = MO(1) right of RShift
 
 CW = 5                        # cell width
 
@@ -43,7 +44,7 @@ GRID = [
     [14, G, 15, 16, 17, 18, 19, 20,  G, G, 21, 22, 23, 24, 25, 26, 27, 64],  # QWERT
     [28, G, 29, 30, 31, 32, 33, 34,  G, G, 35, 36, 37, 38, 39, 40,  G, 65],  # home
     [42, G, 43, 44, 45, 46, 47, 48,  G, G, 49, 50, 51, 52, 53, 54, 55,  X],  # ZXCVB
-    [ G, G, 56,  G,  G,  G, 57, 58, 59, G, 61, 62, 63,  G,  G,  G,  G, 67],  # thumbs
+    [ G, G, 56,  G,  G,  G, 57, 58, 59, G,  X, 62, 63,  G,  G,  G,  G, 67],  # thumbs
 ]
 assert all(len(r) == 18 for r in GRID), [len(r) for r in GRID]
 
@@ -90,7 +91,7 @@ def render(name, toks):
 
 def main():
     layers = parse_layers(KEYMAP.read_text())
-    print("TypeK — VIA keymap layers (physical board: no Delete, no key right of RShift)")
+    print("TypeK — VIA keymap layers (physical board: no Delete, no key right of RShift, 3u right space)")
     print("  ▽ = transparent (falls through)   ✗ = no physical switch   ▌ = underglow LED\n")
     for idx, name, toks in layers:
         title = f"Layer [{idx}]" + (f"  —  {name}" if name else "")
